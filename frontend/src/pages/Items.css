@@ -1,0 +1,110 @@
+.Form-1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Form-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Editor {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin: 40px;
+    gap: 10px;
+    
+}
+
+.Input {
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: transparent;
+    border-style: solid;
+    color: white;
+    border-width: 4px;
+    
+}
+
+.Editor-Button {
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: white;
+    border-style: solid;
+    color: #3e63e7;
+    font-size: 20px;
+}
+
+.Grid {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin: 40px;
+
+}
+
+.GridHeader {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-color: black;
+    background-color: rgb(0, 157, 255);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+
+    
+}
+
+.Grid-Items {
+   font-size: 20px;
+   margin: 10px 6px;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 40px;
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.Header-Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+
+}
+
+button {
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: #3e63e7;
+    border-style: solid;
+    color: white;
+    font-size: 20px;
+}
+
+
