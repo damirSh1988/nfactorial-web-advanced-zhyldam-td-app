@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MaterialTable from '@material-table/core';
 import './Items.css';
+import { Link } from "react-router-dom";
 
 const columns = [
     {title: 'Наименование', field: 'description'},
@@ -26,7 +27,7 @@ const Items = () => {
         summa: null,
         usd:"",
         pk: "",
-        conteiner:""
+        container:""
     })
 
 const handleChange = (e) => {
@@ -36,10 +37,10 @@ const handleChange = (e) => {
 
 
 const handleClick = async e =>{
-    console.log("hello")
+    
     e.preventDefault()
     try{
-        console.log("try")
+    
        await  axios.post("http://localhost:8800/items", item)
        
     }catch(err){
@@ -70,7 +71,7 @@ const handleClick = async e =>{
             <div className="Header">
                 <h1 className='mx-5'>zhyldam-td</h1>
                 <div className='Header-Buttons mx-3'>
-                    <button>Import Excel</button>
+                    <button > <Link to={"/parse-excel"} style={{color: 'white'}}>Import Excel</Link> </button>
                     <button>Export XML</button>
                 </div>
             </div>
